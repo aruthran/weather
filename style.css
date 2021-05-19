@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    color: white;
+    /*background-image: url("background.jpg");*/
+    background-size: cover;
+    font-family:'Segoe UI';
+}
+
+.location,
+ .temperature {
+    height: 30vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location {
+    font-size: 32px;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+    font-size: 28px;
+    margin: 2px;
+}
+
+.degree-section h2 {
+    font-size: 38px;
+}
+
+.temperature-description {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.icon-section {
+    padding-top: 12px;
+}
+
+
+.temp-properties h2 {
+    padding: 12px;
+}
+
+
+img {
+    width: 180px;
+    height: 160px;
+}
+
+footer {
+    height: 440px;
+    width: 100%;
+    background-image: url("background.png");
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 735px) {
+    .degree-section h2 {
+        font-size: 27px;
+        margin-top: 26px;
+        margin-bottom: 12px;
+    }
+
+    .degree-section span {
+        font-size: 20px;
+    }
+
+    .temp-properties h2 {
+        padding: 12px;
+    }
+
+    .location-timezone {
+        margin-right: 28px;
+    }
+
+    .temperature-description {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 735px) {
+
+}
