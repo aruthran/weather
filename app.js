@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
                     tempDescription.textContent = info[0].description
                     windSpeed.textContent = data.wind.speed
                     pressure.textContent = temperature.pressure
-                    let src = `http://openweathermap.org/img/wn/${icon}@2x.png`
+                    let src = `https://openweathermap.org/img/wn/${icon}@2x.png`
                     var img = document.createElement("img")
                     img.src = src
                     iconSection.appendChild(img)
